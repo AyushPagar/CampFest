@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Campus Food Habits Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- SheetJS library to read Excel -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>🍔 Campus Food Habits Dashboard</h1>
+
+<input type="text" id="search" placeholder="Enter Student Name">
+<button onclick="searchStudent()">Search</button>
+
+<div class="cards">
+
+<div class="card">
+<h3>Student Name</h3>
+<p id="studentName">-</p>
+</div>
+
+<div class="card">
+<h3>Most Ordered Food</h3>
+<p id="food">-</p>
+</div>
+
+<div class="card">
+<h3>Delivery App</h3>
+<p id="app">-</p>
+</div>
+
+</div>
+
+<h2>Student Data</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Branch</th>
+<th>Year</th>
+<th>Food</th>
+<th>App</th>
+</tr>
+</thead>
+
+<tbody id="table"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
